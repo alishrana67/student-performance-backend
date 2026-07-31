@@ -8,7 +8,11 @@ app = FastAPI(title="Student Performance Prediction API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:8080"],
+    allow_origins=[
+        "http://localhost:8080",
+        "http://localhost:5173",
+        "https://student-performance-backend-avyq.onrender.com",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
