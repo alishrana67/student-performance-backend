@@ -15,7 +15,7 @@ venv/
 # OS
 .DS_Store
 
-# Data and models
+# Data 
 data/raw/
 data/processed/
-models/
+
